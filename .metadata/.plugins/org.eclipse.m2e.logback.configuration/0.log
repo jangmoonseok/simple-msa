@@ -570,3 +570,4 @@
 2024-02-17 17:43:14,354 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts\workspace\SImpleMSA\ConfigServer\src\test\resources
 2024-02-17 17:44:10,922 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-02-17 17:44:10,928 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-17 17:44:10,930 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts\workspace\SImpleMSA\ConfigServer\src\test\resources
