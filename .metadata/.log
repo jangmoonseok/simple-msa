@@ -780,3 +780,6 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-02-17 17:30:14.838
 !MESSAGE executing callback sts4.classpath.TEVANnHE SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2024-02-17 17:50:56.805
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

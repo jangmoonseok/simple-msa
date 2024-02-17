@@ -42,8 +42,8 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService() {
 
         UserDetails user1 = User.builder()
-                .username("admin")
-                .password(bCryptPasswordEncoder().encode("1234"))
+                .username("아이디")
+                .password(bCryptPasswordEncoder().encode("비밀번호"))
                 .roles("ADMIN")
                 .build();
 
