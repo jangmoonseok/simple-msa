@@ -64,7 +64,10 @@
 	        <scope>system</scope>
 	        <systemPath>${project.basedir}/lib/com/common-lib/1.0.0/CommonLibaray-0.0.1-SNAPSHOT.jar</systemPath>
 	    </dependency>
-    	
+    	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
