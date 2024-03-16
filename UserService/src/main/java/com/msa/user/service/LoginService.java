@@ -22,9 +22,10 @@ public class LoginService implements UserDetailsService{
 		MemberEntity member = repository.findByMemberName(username)
 										.orElseThrow(() -> new UsernameNotFoundException("유저가 존재하지 않습니다."));
 		
-		User.builder().username(member.getMemberName())
-			.password(member.getPassword());
-		return null;
+		UserDetails userDetails = User.builder().username(member.getMemberName())
+			.password(member.getPassword())
+			.build();
+		return userDetails;
 	}
 
 }

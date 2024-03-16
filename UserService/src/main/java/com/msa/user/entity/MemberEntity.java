@@ -1,5 +1,7 @@
 package com.msa.user.entity;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,11 +9,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "T_MEMBER")
 @Getter
-@Builder
+@NoArgsConstructor
 public class MemberEntity {
 
 	@Id
@@ -24,4 +27,8 @@ public class MemberEntity {
 	
 	@Column(name = "password")
 	private String password;
+	
+	public void passwordEncoder(BCryptPasswordEncoder encoder) {
+		this.password = encoder.encode(password);
+	}
 }
